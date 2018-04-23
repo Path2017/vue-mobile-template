@@ -1,10 +1,6 @@
 <template>
   <div class="hello">
-    <mt-header fixed title="固定在顶部"></mt-header>
-    <div class="flex-content">
-      <div class="flex-item">1</div>
-      <div class="flex-item">2</div>
-    </div>
+    <mt-header fixed title="test mint-ui fixed in top"></mt-header>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -58,10 +54,9 @@
         </a>
       </li>
     </ul>
-    <div @click="addBtn">点击一下</div>
-    <div id="addBox"></div>
-    <div>语言包测试</div>
-    <div>{{$t('menu.home')}}</div>
+    <div id="testjq"></div>
+    <div>{{$t('message.hello')}}</div>
+    {{reqpath.url}}
   </div>
 </template>
 
@@ -73,13 +68,8 @@
         msg: 'Welcome to Your Vue.js App'
       }
     },
-    mounted() {
-      console.log(this.reqpath.url.url)
-    },
-    methods: {
-      addBtn() {
-        $('#addBox').html('通过jquery添加的内容')
-      }
+    mounted: function () {
+      $('#testjq').html('this is add by jquery')
     }
   }
 
@@ -104,25 +94,6 @@
 
   a {
     color: #42b983;
-  }
-
-  .flex-content {
-    display: flex;
-    background-color: #F0f0f0;
-    justify-content: space-between;
-  }
-
-  .flex-content .flex-item {
-    padding: 20px;
-    background-color: #B1FF84;
-  }
-
-  .flex-content .flex-item:first-child {
-    background-color: #F5DE25;
-  }
-
-  .flex-content .flex-item:last-child {
-    background-color: #90D9F7;
   }
 
 </style>

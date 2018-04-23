@@ -1,8 +1,8 @@
 {
-  "name": "drc_web_mobile",
+  "name": "vue-mobile-template",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "pathliu <path2017@126.com>",
+  "author": "Path2017 <path2017@126.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -10,7 +10,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "jquery": "^3.3.1",
+    "mint-ui": "^2.2.13",
     "vue": "^2.5.2",
+    "vue-i18n": "^7.6.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -30,8 +33,6 @@
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
-    "jquery": "^3.3.1",
-    "mint-ui": "^2.2.13",
     "node-notifier": "^5.1.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
@@ -44,7 +45,6 @@
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
-    "vue-i18n": "^7.6.0",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
